@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    background-color: #2f0589;
+    color: #fff;
+    padding: 20px;
+  }
+
+  nav{
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .banner-split1{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .banner-split2{
+    width : 50%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-split2 img{
+    width: 250px;
+    height: 250px;
+  }
+  
+  .banner {
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+    width : 80%;
+    height: 60%;
+
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width : 80%;
+  }
+  .about-me{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .about-me img{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+  }
+  
+  
+  .profile-pic img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .portfolio {
+    width: 80%;
+    padding: 50px;
+    /* Add styles for portfolio images or slides here */
+  }
+
+  footer {
+    display: block;
+    width: 100%;
+    background-color: #2f0589;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .banner {
+      /* Adjust styles for smaller devices (e.g., tablets) */
+      width: 100%;
+      padding: 20px;
+    }
+    .banner-split1{
+        width: 50%;
+        padding: 20px;
+      }
+  
+      .banner-split2{
+          justify-content: center;
+          width: 50%;
+          padding: 20px;
+          align-items: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+  }
+
+  @media (max-width: 576px) {
+    .banner {
+      /* Adjust styles for smaller devices (e.g., mobile phones) */
+      width: 100%;
+      flex-direction: column;
+    }
+    .banner-split1{
+      width: 80%;
+      padding: 20px;
+    }
+
+    .banner-split2{
+        justify-content: center;
+        width: 80%;
+        padding: 20px;
+      }
+    }
